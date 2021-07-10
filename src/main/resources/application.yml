@@ -1,0 +1,19 @@
+server:
+  port: 8765
+  ssl:
+    key-store: file:D:/Codes/taco-cloud/src/main/resources/mykeys.jks
+    key-store-password: tacoweb
+    key-password: tacoweb
+spring:
+  thymeleaf:
+    cache: false
+  jpa:
+    show-sql: true
+logging:
+  path: /var/logs/
+  level:
+    root: WARN
+    org.springframework.security: DEBUG
+
+greeting:
+  message: hello testing descrition
