@@ -1,4 +1,4 @@
-package tacos;
+package tacos.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

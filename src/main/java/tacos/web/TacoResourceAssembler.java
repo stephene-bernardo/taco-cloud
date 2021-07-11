@@ -1,8 +1,7 @@
-package tacos;
+package tacos.web;
 
 import org.springframework.hateoas.server.mvc.RepresentationModelAssemblerSupport;
 import tacos.domain.Taco;
-import tacos.web.DesignTacoController;
 
 public class TacoResourceAssembler extends RepresentationModelAssemblerSupport<Taco, TacoResource> {
     public TacoResourceAssembler(){

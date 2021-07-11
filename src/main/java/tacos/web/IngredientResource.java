@@ -1,4 +1,4 @@
-package tacos;
+package tacos.web;
 
 import lombok.Getter;
 import org.springframework.hateoas.RepresentationModel;
