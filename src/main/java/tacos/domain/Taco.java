@@ -1,4 +1,4 @@
-package tacos;
+package tacos.domain;
 
 import lombok.Data;
 
@@ -10,7 +10,7 @@ import java.util.List;
 
 @Data
 @Entity
-public class Taco {
+public class Taco{
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

@@ -2,7 +2,7 @@ package tacos;
 
 import lombok.Data;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import tacos.data.User;
+import tacos.domain.User;
 
 @Data
 public class RegistrationForm {

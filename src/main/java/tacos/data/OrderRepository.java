@@ -1,7 +1,7 @@
 package tacos.data;
 
 import org.springframework.data.repository.CrudRepository;
-import tacos.Order;
+import tacos.domain.Order;
 
 import java.util.Date;
 import java.util.List;
