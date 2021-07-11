@@ -1,7 +1,7 @@
 server:
   port: 8765
   ssl:
-    key-store: file:D:/Codes/taco-cloud/src/main/resources/mykeys.jks
+    key-store: file:D:/Codes/taco-cloud/tacocloud-restapi/src/main/resources/mykeys.jks
     key-store-password: tacoweb
     key-password: tacoweb
 spring:
