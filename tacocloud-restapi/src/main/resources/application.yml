@@ -13,6 +13,11 @@ spring:
   h2:
     console:
       enabled: true
+  artemis:
+    host: artemis.tacocloud.com
+    port: 61617
+    user: tacoweb
+    password: l3tm31n
   datasource:
     url: jdbc:h2:mem:testdb
     driverClassName: org.h2.Driver
