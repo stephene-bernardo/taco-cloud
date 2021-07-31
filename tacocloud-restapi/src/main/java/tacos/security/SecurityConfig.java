@@ -34,7 +34,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.authorizeRequests()
-                .antMatchers("/design", "/orders")
+                .antMatchers("/design", "/orders", "/kafka")
                 .hasRole(RoleConstant.USER)
                 .antMatchers("/", "/**")
                 .permitAll()

@@ -10,6 +10,20 @@ spring:
   jpa:
     show-sql: true
     database-platform: org.hibernate.dialect.H2Dialect
+  jms:
+    template:
+      default-destination: tacocloud.order.queue
+  kafka:
+    bootstrap-servers:
+      - localhost:2181
+    template:
+      default-topic: tacocloud.orders.topic
+    consumer:
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      group-id: tacocloud_kitchen
+      properties:
+        spring.json.trusted.packages: tacos
+
   h2:
     console:
       enabled: true

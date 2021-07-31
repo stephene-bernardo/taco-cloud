@@ -1,16 +1,14 @@
 package tacos.web;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.hateoas.CollectionModel;
-import org.springframework.hateoas.server.EntityLinks;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import tacos.domain.Taco;
 import tacos.data.TacoRepository;
+import tacos.domain.Taco;
 
 import java.util.List;
 import java.util.Optional;
@@ -24,15 +22,15 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
 @CrossOrigin(origins = "*")
 public class DesignTacoController {
     private TacoRepository tacoRepository;
-
-    @Autowired
-    EntityLinks entityLinks;
+//
+//    @Autowired
+//    EntityLinks entityLinks;
 
     public DesignTacoController(TacoRepository tacoRepository) {
         this.tacoRepository = tacoRepository;
     }
 
-    @GetMapping("/recent")
+    @GetMapping("/recenta")
     public CollectionModel<TacoResource> recentTacos() {
         PageRequest pageRequest = PageRequest.of(0, 12, Sort.by("createdAt").descending());
         List<Taco> tacoList  = tacoRepository.findAll(pageRequest).getContent();
